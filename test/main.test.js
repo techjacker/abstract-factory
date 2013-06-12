@@ -54,7 +54,7 @@ test('simple full example for README', function(t) {
 	}));
 
 	// oh dear your investors cut the funding suddenly...
-	// ...that's okay, all you have to do is swap out on dependency
+	// ...that's okay, all you have to do is swap out a single dependency
 	// when instantiating your app; no need to go hunting for methods
 	// buried deep in your lib dir
 	var MyAppBeta = new App(new AbstractFactory({

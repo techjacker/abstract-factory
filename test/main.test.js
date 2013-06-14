@@ -8,7 +8,8 @@ var _    = require('underscore'),
 	test = require('tap').test,
 	ValidationError = require('custom-errors').general.ValidationError,
 // libs
-	AbstractFactory = require('./../lib/main'),
+	AbstractFactory = require('/home/andy/lib/modules/npm/abstract-factory'),
+	// AbstractFactory = require('./../lib/main'),
 // fixtures
 	factoryHashFixture = {
 		FactoryOne: {
@@ -95,7 +96,12 @@ test('AbstractFactory.prototype.getFactory', function(t) {
 	var AbFab = new AbstractFactory(factoryHashFixtureValid),
 		initOpts = 'anything',
 		FacTwo = AbFab.getFactory('FactoryTwo', initOpts),
-		Default = AbFab.getFactory();
+		Default = AbFab.getFactory(),
+		FacNoDefault = new AbstractFactory({one: 'random'});
+
+	t.equal(FacNoDefault.getFactory('one'), 'random', 'FacNoDefault returns factory that exists');
+	t.throws(function () { FacNoDefault.getFactory('doesntExist'); }, 'throws if factory key is not is registry');
+
 
 	t.deepEqual(AbFab.getFactory('FactoryOne'), factoryHashFixtureValid.FactoryOne, 'correct factory is returned');
 	t.ok(FacTwo instanceof factoryHashFixtureValid.FactoryTwo, 'class is instantiated');

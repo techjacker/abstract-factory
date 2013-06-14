@@ -1,0 +1,101 @@
+{
+    "project": {
+        "name": "abstract-factory",
+        "description": "An interface for JavaScript applications",
+        "version": "0.1.0",
+        "url": "https://github.com/techjacker/abstract-factory"
+    },
+    "files": {
+        "lib/main.js": {
+            "name": "lib/main.js",
+            "modules": {},
+            "classes": {
+                "AbstractFactory": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "AbstractFactory": {
+            "name": "AbstractFactory",
+            "shortname": "AbstractFactory",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "lib/main.js",
+            "line": 4,
+            "description": "Abstract Factory",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "factories",
+                    "description": "Hash of factories to store in the registry.",
+                    "type": "Object"
+                }
+            ],
+            "itemtype": "property",
+            "type": "Object",
+            "throws": [
+                "{ValidationError} \tIf factories is not an object"
+            ]
+        }
+    },
+    "classitems": [
+        {
+            "file": "lib/main.js",
+            "line": 21,
+            "class": "AbstractFactory"
+        },
+        {
+            "file": "lib/main.js",
+            "line": 25,
+            "description": "Get a factory from the registry.",
+            "itemtype": "method",
+            "name": "",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "Name of factory you want to return; defaults to Default factory.",
+                    "type": "String",
+                    "optional": true,
+                    "optdefault": "Default"
+                },
+                {
+                    "name": "initOpts",
+                    "description": "Params to pass to the factory if being instantiated with new, eg new Factory (initOps).",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "throws": [
+                "{ValidationError} If type of factory is not found in registry and no default is set"
+            ],
+            "return": {
+                "description": "The factory requested from the registry.",
+                "type": "Class"
+            },
+            "class": "AbstractFactory"
+        },
+        {
+            "file": "lib/main.js",
+            "line": 45,
+            "description": "Exports AbstractFactory Class",
+            "type": "{AbstractFactory}",
+            "class": "AbstractFactory"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type",
+            "line": " lib/main.js:21"
+        },
+        {
+            "message": "Missing item type\nExports AbstractFactory Class",
+            "line": " lib/main.js:45"
+        }
+    ]
+}

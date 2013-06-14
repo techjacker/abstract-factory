@@ -1,0 +1,12 @@
+{
+  "name": "abstract-factory",
+  "description": "An interface for JavaScript applications",
+  "version": "0.1.1",
+  "url": "https://github.com/techjacker/abstract-factory",
+  "options": {
+    "paths": [
+      "./lib"
+    ],
+    "outdir": "./docs"
+  }
+}

@@ -5,7 +5,7 @@
 // npm modules
 var _    = require('underscore'),
 	clone = require('clone'),
-	test = require('tap').test,
+	test = require('tape').test,
 	ValidationError = require('custom-errors').general.ValidationError,
 // libs
 	AbstractFactory = require('/home/andy/lib/modules/npm/abstract-factory'),

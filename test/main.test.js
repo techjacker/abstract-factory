@@ -8,8 +8,7 @@ var _    = require('underscore'),
 	test = require('tape').test,
 	ValidationError = require('custom-errors').general.ValidationError,
 // libs
-	AbstractFactory = require('/home/andy/lib/modules/npm/abstract-factory'),
-	// AbstractFactory = require('./../lib/main'),
+	AbstractFactory = require('./../lib/main'),
 // fixtures
 	factoryHashFixture = {
 		FactoryOne: {

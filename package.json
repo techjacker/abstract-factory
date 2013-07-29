@@ -1,6 +1,6 @@
 {
   "name": "abstract-factory",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "license": "MIT",
   "description": "abstract factory class",
   "tags": [
@@ -24,8 +24,7 @@
     "test": "tap ./test"
   },
   "dependencies": {
-    "underscore": ">=1.4",
-    "custom-errors": "~1.4.1"
+    "custom-errors": "~1.5"
   },
   "devDependencies": {
     "tap": ">=0.4",
@@ -36,10 +35,20 @@
   "testling": {
     "files": "test/*.test.js",
     "browsers": {
-      "ie": [ 8, 9 ],
-      "ff": [ 12, 13 ],
-      "chrome": [ 20 ],
-      "safari": [ 5.1 ]
+      "ie": [
+        8,
+        9
+      ],
+      "ff": [
+        12,
+        13
+      ],
+      "chrome": [
+        20
+      ],
+      "safari": [
+        5.1
+      ]
     }
   }
 }

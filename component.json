@@ -1,0 +1,18 @@
+{
+  "name": "abstract-factory",
+  "version": "0.1.3",
+  "license": "MIT",
+  "description": "abstract factory class",
+  "keywords": [
+    "interface",
+    "abstract factory",
+    "dependency injection"
+  ],
+  "repo": "techjacker/abstract-factory",
+  "main": "index.js",
+  "scripts": [
+    "index.js",
+    "lib/main.js"
+  ],
+  "dependencies": {}
+}
